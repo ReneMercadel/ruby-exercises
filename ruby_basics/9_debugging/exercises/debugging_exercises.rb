@@ -10,7 +10,7 @@ require 'pry-byebug'
 def decrement_smallest_value(nested_array)
   smallest_value = nested_array.flatten.max
   nested_array.each do |array|
-    array.each do |current_value|
+        array.each do |current_value|
       if smallest_value > current_value
         smallest_value = current_value
       end
@@ -43,7 +43,7 @@ def isogram?(string)
   string_array = string.downcase.split('')
   unique_length = string_array.uniq.length
   # puts string
-  # p string_array
+  # p string_arrayasf
   # puts unique_length, original_length
   original_length == unique_length
 end
@@ -56,10 +56,10 @@ end
 # Once you find the error, fix it and get the test to pass
 
 def yell_greeting(string)
-  # binding.pry
-  name = string
-  # binding.pry
-  name = name.upcase
-  # binding.pry
-  greeting = "WASSAP, #{name}!"
+              # binding.pry
+              name = string
+              # binding.pry
+              name = name.upcase
+              # binding.pry
+              greeting = "WASSAP, #{name}!"
 end
